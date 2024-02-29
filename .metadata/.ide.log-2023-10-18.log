@@ -1,0 +1,3 @@
+2023-10-18 21:34:26,184 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to true
+2023-10-18 21:34:26,567 [INFO] ApiDb:448 - Save user favorites file C:\Users\islam/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2023-10-18 21:34:26,568 [INFO] ApiDb:452 - User favorites MCUs=[]
