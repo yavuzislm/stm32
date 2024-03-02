@@ -57,8 +57,7 @@ void button_init(void)
   *pClkCtrlReg |= ( 1 << 0);
 
   *pClkCtrlRegApb2 |= ( 1 << 14);
-  //We are activating the 14th bit because external interrupt called as System Configuration and when you check it
-  //you will see it is on 14th bit.
+
   *pEXTTIEdgeCtrlReg |= ( 1 << 0);
 
   *pEXTIMaskReg |= ( 1 << 0);
