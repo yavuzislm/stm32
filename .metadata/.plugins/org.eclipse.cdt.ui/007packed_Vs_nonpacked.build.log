@@ -1,0 +1,10 @@
+12:22:28 **** Incremental Build of configuration Debug for project 007packed_Vs_nonpacked ****
+make -j8 all 
+arm-none-eabi-size  007packed_Vs_nonpacked.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5012	    100	   1900	   7012	   1b64	007packed_Vs_nonpacked.elf
+Finished building: default.size.stdout
+ 
+
+12:22:28 Build Finished. 0 errors, 0 warnings. (took 276ms)
+

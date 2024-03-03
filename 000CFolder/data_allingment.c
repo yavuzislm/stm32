@@ -33,6 +33,4 @@ int main()
         ptr++;
     }
     printf("Total memory consumed by this struct varibles = %u",sizeof(struct dataSet));
-    
-    getchar();
 }
