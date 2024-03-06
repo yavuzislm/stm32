@@ -20,7 +20,6 @@ int main(){
     data.data3 = 0x22;
     data.data4 = 0xABCD;
 
-    displayMemberElements(&data);
     /*
     printf("Before: data.data1 = %d\n",data.data1); 
 
@@ -31,7 +30,8 @@ int main(){
 
     printf("After: data.data1 = %d\n",data.data1); 
     */
-
+    displayMemberElements(&data);
+    
     return(0);
 }
 
