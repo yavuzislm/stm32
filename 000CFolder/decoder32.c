@@ -15,7 +15,19 @@ struct Packet{
     uint8_t shortAddr;
     uint8_t addrMode;
 };
-
+/*
+you can also define it like this. This leads to use less memory than normal.
+struct Packet{
+    uint32_t crc :2;
+    uint32_t status : 1;
+    uint32_t payload :12;
+    uint32_t bat :3;
+    uint32_t sensor :3;
+    uint32_t longAddr :8;
+    uint32_t shortAddr :2;
+    uint32_t addrMode :1;
+}
+*/
 int main(){
 
     struct Packet decode;
