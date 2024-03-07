@@ -1,0 +1,32 @@
+/*
+ * main.h
+ *
+ *  Created on: Mar 7, 2024
+ *      Author: islam
+ */
+
+#ifndef MAIN_H_
+#define MAIN_H_
+
+#include <stdint.h>
+
+typedef struct
+{
+	uint32_t gpioAen	:1;
+	uint32_t gpioBen	:1;
+	uint32_t gpioCen	:1;
+	uint32_t gpioDen	:1;
+	uint32_t gpioEen	:1;
+	uint32_t reserved	:2;
+	uint32_t gpioHen	:1;
+	uint32_t reserved1	:4;
+	uint32_t crcen		:1;
+	uint32_t reserved2	:8;
+	uint32_t dma1en		:1;
+	uint32_t dma2en		:1;
+	uint32_t reserved3	:9;
+}RCC_AHB1ENR_t;
+
+
+
+#endif /* MAIN_H_ */

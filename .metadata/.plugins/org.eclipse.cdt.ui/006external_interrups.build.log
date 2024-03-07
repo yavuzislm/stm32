@@ -1,0 +1,9 @@
+23:12:30 **** Clean-only build of configuration Debug for project 006external_interrups ****
+make -j8 clean 
+rm -rf ./Startup/startup_stm32f411vetx.d ./Startup/startup_stm32f411vetx.o
+rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+rm -rf 006external_interrups.elf 006external_interrups.list 006external_interrups.map default.size.stdout
+ 
+
+23:12:30 Build Finished. 0 errors, 0 warnings. (took 216ms)
+

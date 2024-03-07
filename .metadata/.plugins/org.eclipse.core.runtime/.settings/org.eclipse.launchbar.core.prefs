@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:math Debug,org.eclipse.launchbar.core.descriptorType.default\:math.c.exe,org.eclipse.launchbar.core.descriptorType.default\:notes.exe,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:led_toggle,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:led_on,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:002TurnOnLED,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:003_IOPinRead,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:004VolatileQualifier,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001HelloWorld Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:005user_button Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:007packed_Vs_nonpacked
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:math Debug,org.eclipse.launchbar.core.descriptorType.default\:math.c.exe,org.eclipse.launchbar.core.descriptorType.default\:notes.exe,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:led_toggle,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:led_on,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:002TurnOnLED,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:003_IOPinRead,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:004VolatileQualifier,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001HelloWorld Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:005user_button Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:007packed_Vs_nonpacked,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:008led_toggle_bitfields
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:001HelloWorld\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:003_IOPinRead/activeLaunchMode=run
@@ -11,6 +11,7 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:005button_ISR/activeLaunchMode=
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:005button_ISR/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:005user_button/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:006VDDandGND/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:008led_toggle_bitfields/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HelloWorld\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HelloWorld1\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:HelloWorld1\ Debug/activeLaunchTarget=null\:---

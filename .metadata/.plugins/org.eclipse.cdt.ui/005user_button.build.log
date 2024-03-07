@@ -1,10 +1,17 @@
-18:02:03 **** Incremental Build of configuration Debug for project 005user_button ****
+23:12:18 **** Build of configuration Debug for project 005user_button ****
 make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411VETx -DSTM32 -DSTM32F4 -DSTM32F411E_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "005user_button.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\islam\Desktop\Embedded-C\My_workspace\target\005user_button\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005user_button.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 005user_button.elf
+ 
 arm-none-eabi-size  005user_button.elf 
+arm-none-eabi-objdump -h -S 005user_button.elf  > "005user_button.list"
    text	   data	    bss	    dec	    hex	filename
    5204	    124	   1908	   7236	   1c44	005user_button.elf
 Finished building: default.size.stdout
  
+Finished building: 005user_button.list
+ 
 
-18:02:04 Build Finished. 0 errors, 0 warnings. (took 236ms)
+23:12:19 Build Finished. 0 errors, 0 warnings. (took 726ms)
 

@@ -1,9 +1,9 @@
-10:24:10 **** Clean-only build of configuration Debug for project 004VolatileQualifier ****
+23:12:32 **** Clean-only build of configuration Debug for project 004VolatileQualifier ****
 make -j8 clean 
 rm -rf ./Startup/startup_stm32f411vetx.d ./Startup/startup_stm32f411vetx.o
 rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
 rm -rf 004VolatileQualifier.elf 004VolatileQualifier.list 004VolatileQualifier.map default.size.stdout
  
 
-10:24:10 Build Finished. 0 errors, 0 warnings. (took 150ms)
+23:12:32 Build Finished. 0 errors, 0 warnings. (took 286ms)
 

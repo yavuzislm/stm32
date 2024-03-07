@@ -1,31 +1,24 @@
-12:21:07 **** Build of configuration Debug for project 007packed_Vs_nonpacked ****
+23:25:31 **** Build of configuration Debug for project 008led_toggle_bitfields ****
 make -j8 all 
 arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f411vetx.d" -MT"Startup/startup_stm32f411vetx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f411vetx.o" "../Startup/startup_stm32f411vetx.s"
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411VETx -DSTM32 -DSTM32F4 -DSTM32F411E_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
 arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411VETx -DSTM32 -DSTM32F4 -DSTM32F411E_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
 arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411VETx -DSTM32 -DSTM32F4 -DSTM32F411E_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "007packed_Vs_nonpacked.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\islam\Desktop\Embedded-C\My_workspace\target\007packed_Vs_nonpacked\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="007packed_Vs_nonpacked.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 007packed_Vs_nonpacked.elf
+arm-none-eabi-gcc -o "008led_toggle_bitfields.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\islam\Desktop\Embedded-C\My_workspace\target\008led_toggle_bitfields\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="008led_toggle_bitfields.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 008led_toggle_bitfields.elf
  
-arm-none-eabi-size  007packed_Vs_nonpacked.elf 
-arm-none-eabi-objdump -h -S 007packed_Vs_nonpacked.elf  > "007packed_Vs_nonpacked.list"
+arm-none-eabi-size  008led_toggle_bitfields.elf 
+arm-none-eabi-objdump -h -S 008led_toggle_bitfields.elf  > "008led_toggle_bitfields.list"
    text	   data	    bss	    dec	    hex	filename
-   5012	    100	   1900	   7012	   1b64	007packed_Vs_nonpacked.elf
+    728	      8	   1568	   2304	    900	008led_toggle_bitfields.elf
 Finished building: default.size.stdout
  
-Finished building: 007packed_Vs_nonpacked.list
+Finished building: 008led_toggle_bitfields.list
  
-12:21:14 **** Incremental Build of configuration Debug for project 007packed_Vs_nonpacked ****
+23:25:55 **** Incremental Build of configuration Debug for project 008led_toggle_bitfields ****
 make -j8 all 
-arm-none-eabi-size  007packed_Vs_nonpacked.elf 
+arm-none-eabi-size  008led_toggle_bitfields.elf 
    text	   data	    bss	    dec	    hex	filename
-   5012	    100	   1900	   7012	   1b64	007packed_Vs_nonpacked.elf
-Finished building: default.size.stdout
- 
-12:22:28 **** Incremental Build of configuration Debug for project 007packed_Vs_nonpacked ****
-make -j8 all 
-arm-none-eabi-size  007packed_Vs_nonpacked.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5012	    100	   1900	   7012	   1b64	007packed_Vs_nonpacked.elf
+    728	      8	   1568	   2304	    900	008led_toggle_bitfields.elf
 Finished building: default.size.stdout
  
