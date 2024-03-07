@@ -1,4 +1,4 @@
-23:25:31 **** Build of configuration Debug for project 008led_toggle_bitfields ****
+23:30:39 **** Build of configuration Debug for project 008led_toggle_bitfields ****
 make -j8 all 
 arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f411vetx.d" -MT"Startup/startup_stm32f411vetx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f411vetx.o" "../Startup/startup_stm32f411vetx.s"
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411VETx -DSTM32 -DSTM32F4 -DSTM32F411E_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
@@ -15,7 +15,7 @@ Finished building: default.size.stdout
  
 Finished building: 008led_toggle_bitfields.list
  
-23:25:55 **** Incremental Build of configuration Debug for project 008led_toggle_bitfields ****
+23:30:45 **** Incremental Build of configuration Debug for project 008led_toggle_bitfields ****
 make -j8 all 
 arm-none-eabi-size  008led_toggle_bitfields.elf 
    text	   data	    bss	    dec	    hex	filename

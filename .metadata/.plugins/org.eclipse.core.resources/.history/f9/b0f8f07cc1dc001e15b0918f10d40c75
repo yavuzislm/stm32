@@ -32,8 +32,8 @@ int main(void)
 	pClkCtrl->gpioDen = 1;
 
 	GPIOx_MODER_t volatile *const pPortDModeReg = (GPIOx_MODER_t *)0x40020C00;
-	pPortDModeReg->mode12 = 1;
+	pPortDModeReg->mode13 = 1;
 
 	GPIOx_ODR_t volatile *const pPortDOutReg = (GPIOx_ODR_t *)0x40020C14;
-	pPortDOutReg->odr12 = 1;
+	pPortDOutReg->odr13 = 1;
 }

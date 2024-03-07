@@ -100,20 +100,20 @@ int main(void)
 	GPIOx_MODER_t volatile *const pPortDModeReg = (GPIOx_MODER_t *)0x40020C00;
  80001ec:	4b0b      	ldr	r3, [pc, #44]	; (800021c <main+0x44>)
  80001ee:	60bb      	str	r3, [r7, #8]
-	pPortDModeReg->mode13 = 1;
+	pPortDModeReg->mode12 = 1;
  80001f0:	68ba      	ldr	r2, [r7, #8]
  80001f2:	6813      	ldr	r3, [r2, #0]
  80001f4:	2101      	movs	r1, #1
- 80001f6:	f361 639b 	bfi	r3, r1, #26, #2
+ 80001f6:	f361 6319 	bfi	r3, r1, #24, #2
  80001fa:	6013      	str	r3, [r2, #0]
 
 	GPIOx_ODR_t volatile *const pPortDOutReg = (GPIOx_ODR_t *)0x40020C14;
  80001fc:	4b08      	ldr	r3, [pc, #32]	; (8000220 <main+0x48>)
  80001fe:	607b      	str	r3, [r7, #4]
-	pPortDOutReg->odr13 = 1;
+	pPortDOutReg->odr12 = 1;
  8000200:	687a      	ldr	r2, [r7, #4]
  8000202:	6813      	ldr	r3, [r2, #0]
- 8000204:	f443 5300 	orr.w	r3, r3, #8192	; 0x2000
+ 8000204:	f443 5380 	orr.w	r3, r3, #4096	; 0x1000
  8000208:	6013      	str	r3, [r2, #0]
  800020a:	2300      	movs	r3, #0
 }
