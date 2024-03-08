@@ -36,13 +36,16 @@ int main(void)
 	pPortModeReg->mode10 = 0x00;//Column 3
 	pPortModeReg->mode11 = 0x00;//Column 4
 
-	GPIOx_ODR_t volatile *const pPortOutDataReg = (GPIOx_ODR_t *) 0x40020C00 + 0x14;
+	GPIOx_ODR_t volatile *const pPortOutDataReg = (GPIOx_ODR_t *)(0x40020C00 + 0x14);
 	pPortOutDataReg->odr0 = 0x1;
 	pPortOutDataReg->odr1 = 0x1;
 	pPortOutDataReg->odr2 = 0x1;
 	pPortOutDataReg->odr3 = 0x1;
 
-	GPIOx_IDR_t volatile *const pPortInputReg = (GPIOx_IDR_t *) 0x40020C00 + 0x10;
+	GPIOx_IDR_t volatile *const pPortInputReg = (GPIOx_IDR_t *)(0x40020C00 + 0x10);
+	uint32_t volatile *const pPullupDownReg = (uint32_t *)(0x40020C00 + 0x0C);
+	*pPullupDownReg &= ~(0xFF << 16);
+	*pPullupDownReg |= (0x55 << 16);
 
 	while(1)
 	{
@@ -92,7 +95,6 @@ int main(void)
 			printf("Pressed key #");
 		if(((pPortInputReg->odr11) & 0x01) == 0x0)
 			printf("Pressed key D");
-
 	}
-
+	//I didn't add one part which is adding delay after pressing any button.
 }
